@@ -6,9 +6,8 @@ class SubscriberApi {
     private $rules = array(
         'email' => array(
             'required' => true,
-            'min' => 10,
-            'max' => 225,
-            'unique' => 'subscribers'
+            'unique' => 'subscribers',
+            'email' => true
         )
     );
 

@@ -20,9 +20,11 @@
                         $this->addError("{$item} is required");
                     }else if(!empty($value)){
                         switch($rule){
-                            case 'min':
-                                if(strlen($value) < $rule_value){
-                                    $this->addError("{$item} must be a minimum of {$rule_value} characters.");
+                            case 'email':
+                                if($rule_value){
+                                    if(!filter_var($value, FILTER_VALIDATE_EMAIL)){
+                                        $this->addError("{$item} {$value} is not a valid email address");
+                                    }
                                 }
                             break;
                             case 'max':
@@ -38,10 +40,10 @@
                             case 'unique':
                                 $check = $this->_db->get($rule_value, array($item, '=', $value));
                                 if($check->count()){
-                                    $object = new stdClass();
-                                    $object->$item = "{$item} already exist";
-                                    $this->addError($object);
-                                    // $this->addError("{$item} already exist.");
+                                    // $object = new stdClass();
+                                    // $object->$item = "{$item} already exist";
+                                    // $this->addError($object);
+                                    $this->addError("{$item} already exist.");
                                 }
                             break;
                         }
