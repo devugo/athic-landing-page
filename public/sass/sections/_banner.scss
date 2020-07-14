@@ -1,0 +1,54 @@
+.banner {
+    background-image: url('../../public/img/banner-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 774.03px;
+    color: white;
+    padding-top: 100px;
+
+    .content {
+        h2{
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 78px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 37px;
+        }
+        .banner-cloud {
+            position: absolute;
+
+            &-1 {
+                top: 400px;
+                right: 20%;
+            }
+
+            &-2{
+                top: 500px;
+                right: 30%;
+            }
+            &-3{
+                top: 300px;
+                left: 15%;
+            }
+        }
+    }
+}
+
+
+@include media-md {
+    .banner {
+        .content {
+            h2{
+                font-size: 64px;
+            }
+            p{
+                font-size: 30px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 20px;
+    background-color: #f3f3f3;
+}
+
+.alert-success {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    background-color: rgb(21, 180, 21);
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    box-shadow: grey;
+}
+
+.alert-success.slide {
+    right: 0;
+}
+
+.x {
+    position: absolute;
+    left: 3px;
+    cursor: pointer;
+}
+
+.alert-success.hide {
+    display: none;
+}
+
+section {
+    width: 100%;
+    /* margin: 2rem; */
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-content {
+    width: 90%;
+}
+
+.form-content__errors {
+    display: flex;
+    justify-content: center;
+}
+
+.form-content__title {
+    font-size: 25px;
+    position: relative;
+}
+
+.form-content__title::before {
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 0;
+    height: 4px;
+    width: 50px;
+    background-color: orange;
+}
+
+.devugo-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    padding: 10px 20px 20px 20px;
+    /* width: 100%; */
+}
+
+.errors {
+    background-color: pink;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+.errors li {
+    margin: 5px;
+}
+
+.errors.hide {
+    display: none;
+}
+
+.field {
+    width: 100%;
+    margin: 20px 0;
+}
+
+label {
+    width: 100%;
+    display: block;
+}
+
+input {
+    width: 100%;
+    display: block;
+    height: 40px;
+}
+
+.btn {
+    background-color: orange;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+
+@media(min-width: 768px){
+    .form-content {
+        width: 40%;
+    }
+    .errors {
+        width: 70%;
+    }
+}
