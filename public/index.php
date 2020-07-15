@@ -13,11 +13,13 @@
     <section class="banner">
         <div class="content">
             <div class="content-text text-center">
-                <h2>Welcome to Athic</h2>
-                <p>The game changer for professionals<br />
-                    and budding sport enthusiasts.
-                </p>
-                <div class="timer">
+                <div  data-aos="fade-right">
+                    <h2>Welcome to Athic</h2>
+                    <p>The game changer for professionals<br />
+                        and budding sport enthusiasts.
+                    </p>
+                </div>
+                <div class="timer" data-aos="fade-left">
                     <div class="time">
                         <span id="time-days">00</span>
                         <span>Days</span>
@@ -45,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="banner-image text-center">
+            <div class="banner-image text-center" data-aos="fade-down">
                 <img src="public/img/banner-woman-complete.png" />
             </div>
 
@@ -56,20 +58,20 @@
             <div class="content"> 
                 <div class="form">
                     <form id="subscription-form">
-                        <div class="form-element">
+                        <div class="form-element" data-aos="fade-up">
                             <input placeholder="Enter a valid email address" name="subscribe" id="email" />
                             <button class="btn" type="submit">Notify Me</button>
                         </div>
                     </form>
                 </div>
-                <div class="mobile-stores">
+                <div class="mobile-stores" data-aos="fade-up">
                     <div class="mobile-store appstore">
                         <img src="public/img/app-store.png" />
                         <p>Coming To App Sore</p>
                     </div>
                     <div class="mobile-store playstore">
                         <img src="public/img/play-store.png" />
-                        <p>Coming TO Play Store</p>
+                        <p>Coming To Play Store</p>
                     </div>
                 </div>
             </div>
@@ -170,17 +172,27 @@
     </section>
 
     <section class="bottom-subscribe">
-        <div class="container">
-            <div class="content">
+        <div class="container" data-aos="fade-up">
+            <div class="content text-center">
                 <div class="section-title">
                     <h3>Be among the first to try our app</h3>
                 </div>
                 <div class="form">
-                    <!-- <form>
-                        <input placeholder="Enter a valid email address" name="email" />
-                        <button>Notify Me</button>
-                    </form> -->
+                    <form id="subscription-form-2">
+                        <div class="form-element">
+                            <input placeholder="Enter a valid email address" name="email_2" id="email_2" />
+                            <button class="btn" type="submit">Notify Me</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-nav">
+        <div class="container">
+            <div class="content text-center">
+                <img src="public/img/social-bottom.png" />
             </div>
         </div>
     </section>
@@ -193,75 +205,10 @@
 
     <script src="public/js/aos.min.js"></script>
     <script src="public/js/countdown.js"></script>
+    <script src="public/js/form.js"></script>
 
     <script>
         AOS.init();
     </script>
 </body>
-<script>
-    document.getElementById("subscription-form").addEventListener("submit", submitForm);
-    
-    function removeSuccess() {
-        document.getElementById('alert-success').classList.add('hide');
-        document.getElementById('alert-success').classList.remove('slide');
-    }
-    function submitForm(e) {
-        e.preventDefault();
-        let email = document.getElementById('email').value;
-        // console.log(firstname, lastname, email, password_again, password);
-        
-        let errorsNode = document.getElementById("errors");
-
-        axios.post('/subscribe', {
-            email: email
-        })
-        .then(function (response) {
-            console.log(response);
-            // errors.innerHTML = '';
-            // errors.classList.add("hide");
-            // document.getElementById('alert-success').classList.remove('hide');
-            setTimeout(() => {
-                // document.getElementById('alert-success').classList.add('slide')
-                swal({
-                    title: "Success",
-                    text: "You were subscribed successfully!",
-                    icon: "success",
-                    button: "Continue",
-                });
-            }, 1000);
-        })
-        .catch(function (error) {
-            console.log(error.response);
-            // errors.innerHTML = '';
-            // errors.classList.add("hide");
-            // document.getElementById('alert-success').classList.add('hide');
-            if(error.response.status === 403){
-
-                // errors.classList.remove('hide');
-                // let errorData = error.response.data;
-                swal({
-                    title: "Oops!",
-                    text: error.response.data[0],
-                    icon: "warning",
-                    button: "Continue",
-                });
-                // errorData.map((data) => {
-                //     var node = document.createElement("LI");
-                //     var textnode = document.createTextNode(data);
-                //     node.appendChild(textnode);
-                //     errors.appendChild(node);
-                // })
-            }else{
-                swal({
-                    title: "Error",
-                    text: "Something went wrong",
-                    icon: "error",
-                    button: "Continue",
-                });
-            }
-            
-        });
-    }
-   
-</script>
 </html>

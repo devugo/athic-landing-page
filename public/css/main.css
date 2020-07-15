@@ -174,6 +174,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   font-weight: bold;
   font-size: 34px;
   line-height: 78px;
+  text-shadow: 2px 2px 4px #fff;
 }
 
 .banner .content p {
@@ -238,6 +239,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   font-weight: 600;
   font-size: 35px;
   line-height: 63px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .banner .content .timer .time span:last-child {
@@ -376,7 +378,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   border: 1px solid #3F3D56;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 74px;
   margin-right: 20px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -392,7 +394,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   border: 1px solid #3F3D56;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   height: 74px;
   color: white;
@@ -761,6 +763,10 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   }
 }
 
+.app-screens {
+  margin-top: 50px;
+}
+
 .app-screens .container .content .col-content {
   background: #3F3D56;
   width: 100%;
@@ -773,5 +779,86 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
     background: #3F3D56;
     height: 390px;
   }
+}
+
+.bottom-subscribe {
+  margin-top: 50px;
+}
+
+.bottom-subscribe .container .content .section-title {
+  margin-bottom: 40px;
+}
+
+.bottom-subscribe .container .content .section-title h3 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.bottom-subscribe .container .content .form form .form-element input {
+  width: 100%;
+  border: 1px solid #3F3D56;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  height: 54px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bottom-subscribe .container .content .form form .form-element input:hover, .bottom-subscribe .container .content .form form .form-element input:focus {
+  border: 2px solid #3F3D56;
+}
+
+.bottom-subscribe .container .content .form form .form-element input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.bottom-subscribe .container .content .form form .form-element input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.bottom-subscribe .container .content .form form .form-element input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.bottom-subscribe .container .content .form form .form-element input::placeholder {
+  text-align: center;
+}
+
+.bottom-subscribe .container .content .form form .form-element button {
+  background: #FF6F61;
+  border: 1px solid #3F3D56;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 54px;
+  width: 100%;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bottom-subscribe .container .content .form form .form-element button:hover {
+  background: #ff6253;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-subscribe .container .content .section-title h3 {
+    font-size: 35px;
+  }
+  .bottom-subscribe .container .content .form form .form-element input {
+    width: 60%;
+  }
+  .bottom-subscribe .container .content .form form .form-element button {
+    width: 60%;
+  }
+}
+
+.social-nav {
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

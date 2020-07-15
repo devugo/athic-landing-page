@@ -12,7 +12,7 @@
                         width: 100%;
                         border: 1px solid #3F3D56;
                         box-sizing: border-box;
-                        border-radius: 20px;
+                        border-radius: 10px;
                         height: 74px;
                         margin-right: 20px;
                         @include transition-ease;
@@ -25,7 +25,7 @@
                         background: $primary-color;
                         border: 1px solid $tertiary-color;
                         box-sizing: border-box;
-                        border-radius: 20px;
+                        border-radius: 10px;
                         font-size: 20px;
                         height: 74px;
                         color: white;

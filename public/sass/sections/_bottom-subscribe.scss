@@ -1,0 +1,80 @@
+.bottom-subscribe {
+    margin-top: 50px;
+    .container {
+        .content {
+            .section-title {
+                margin-bottom: 40px;
+                h3{
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+            .form {
+                form{
+                    .form-element {
+                        input{
+                            width: 100%;
+                            border: 1px solid #3F3D56;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            height: 54px;
+                            margin-bottom: 20px;
+                            @include transition-ease;
+    
+                            &:hover, &:focus {
+                                border: 2px solid #3F3D56;
+                            }
+                            &::placeholder {
+                                text-align: center;
+                            }
+                        }
+                        button {
+                            background: $primary-color;
+                            border: 1px solid $tertiary-color;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                            font-size: 20px;
+                            height: 54px;
+                            width: 100%;
+                            color: white;
+                            @include transition-ease;
+    
+    
+                            &:hover {
+                                background: #ff6253;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-md {
+    .bottom-subscribe {
+        .container {
+            .content {
+                .section-title {
+                    h3{
+                        font-size: 35px;
+                    }
+                }
+                .form {
+                    form{
+                        .form-element {
+                            input{
+                                width: 60%;
+                            }
+                            button {
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
