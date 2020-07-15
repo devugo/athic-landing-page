@@ -1,0 +1,26 @@
+.app-screens {
+    .container {
+        .content{
+            .col-content {
+                background: #3F3D56;
+                width: 100%;
+                height: 300px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@include media-md {
+    .app-screens {
+        .container {
+            .content{
+                .col-content {
+                    background: #3F3D56;
+                    // width: 500px;
+                    height: 390px;
+                }
+            }
+        }
+    }
+}

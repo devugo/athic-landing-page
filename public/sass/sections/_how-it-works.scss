@@ -58,11 +58,12 @@
 
 @keyframes football {
     0%   { bottom: 130px; }
-    50%  { bottom: 96px; }
+    50%  { bottom: 94px; }
     100% { bottom: 130px; }
 }
 
 .how-it-works {
+    margin-top: 70px;
     .container {
         .content {
             .section-title {
@@ -79,7 +80,7 @@
                 // background-color: red;
                 height: 300px;
                 width: 100%;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
 
                 img {
                     position: absolute;
@@ -123,7 +124,7 @@
                     bottom: 0px;
                     font-size: 20px;
                     line-height: 24px;
-                    left: 35%;
+                    left: 33%;
                     color: $text-color;
                 }
             }

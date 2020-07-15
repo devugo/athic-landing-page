@@ -167,6 +167,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   height: 650.03px;
   color: white;
   padding-top: 50px;
+  padding: 20px;
 }
 
 .banner .content h2 {
@@ -211,7 +212,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .banner .content .timer div {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .banner .content .timer .time {
@@ -235,25 +236,26 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 
 .banner .content .timer .time span:first-child {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 63px;
 }
 
 .banner .content .timer .time span:last-child {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   margin-top: -10px;
 }
 
 .banner .content .timer .time-spacer {
   font-weight: 600;
-  font-size: 48px;
-  margin-top: -10px;
+  font-size: 35px;
+  margin-top: 0px;
 }
 
 .banner .content .banner-image img {
   width: 320px;
-  height: 400px;
+  height: 350px;
+  margin-top: 20px;
 }
 
 .banner .content .banner-phone {
@@ -314,6 +316,28 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   .banner .content p {
     font-size: 30px;
   }
+  .banner .content .timer {
+    color: #3F3D56;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner .content .timer div {
+    margin-right: 20px;
+  }
+  .banner .content .timer .time span:first-child {
+    font-size: 48px;
+  }
+  .banner .content .timer .time span:last-child {
+    font-size: 20px;
+  }
+  .banner .content .timer .time-spacer {
+    font-size: 48px;
+    margin-top: -10px;
+  }
   .banner .content .banner-shadow {
     width: 700px;
   }
@@ -334,7 +358,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .subscribe-action {
-  margin-top: 250px;
+  margin-top: 70px;
 }
 
 .subscribe-action .container .content .form .form-element {
@@ -349,16 +373,23 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 
 .subscribe-action .container .content .form .form-element input {
   width: 100%;
-  border: 2px solid #3F3D56;
+  border: 1px solid #3F3D56;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
   height: 74px;
+  margin-right: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.subscribe-action .container .content .form .form-element input:hover, .subscribe-action .container .content .form .form-element input:focus {
+  border: 2px solid #3F3D56;
 }
 
 .subscribe-action .container .content .form .form-element button {
   background: #FF6F61;
-  border: 2px solid #3F3D56;
+  border: 1px solid #3F3D56;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
@@ -387,7 +418,6 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   width: 150px;
   height: 60px;
   border-radius: 20px;
-  border: 2px solid #3F3D56;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +427,9 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: cell;
+  cursor: default;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -422,26 +454,30 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .subscribe-action .container .content .mobile-stores .mobile-store:hover {
-  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
-          box-shadow: 5px 5px 5px #aaaaaa;
+  border: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
 }
 
 @media screen and (min-width: 768px) {
+  .subscribe-action {
+    margin-top: 130px;
+  }
   .subscribe-action .container .content .form .form-element {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .subscribe-action .container .content .form .form-element input {
-    width: 65%;
+    width: 55%;
     height: 74px;
   }
   .subscribe-action .container .content .form .form-element button {
-    width: 30%;
+    width: 25%;
     height: 74px;
   }
   .subscribe-action .container .content .mobile-stores {
@@ -456,7 +492,6 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
     width: 202px;
     height: 74px;
     border-radius: 20px;
-    border: 2px solid #3F3D56;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -631,7 +666,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
     bottom: 130px;
   }
   50% {
-    bottom: 96px;
+    bottom: 94px;
   }
   100% {
     bottom: 130px;
@@ -643,11 +678,15 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
     bottom: 130px;
   }
   50% {
-    bottom: 96px;
+    bottom: 94px;
   }
   100% {
     bottom: 130px;
   }
+}
+
+.how-it-works {
+  margin-top: 70px;
 }
 
 .how-it-works .container .content .section-title h3 {
@@ -661,7 +700,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   position: relative;
   height: 300px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .how-it-works .container .content .col-content img {
@@ -712,13 +751,27 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   bottom: 0px;
   font-size: 20px;
   line-height: 24px;
-  left: 35%;
+  left: 33%;
   color: #3F3D56;
 }
 
 @media screen and (min-width: 768px) {
   .how-it-works .container .content .section-title h3 {
     font-size: 45px;
+  }
+}
+
+.app-screens .container .content .col-content {
+  background: #3F3D56;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-screens .container .content .col-content {
+    background: #3F3D56;
+    height: 390px;
   }
 }
 /*# sourceMappingURL=main.css.map */

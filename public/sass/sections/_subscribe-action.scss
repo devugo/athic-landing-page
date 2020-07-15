@@ -1,5 +1,5 @@
 .subscribe-action {
-    margin-top: 250px;
+    margin-top: 70px;
 
     .container {
         .content {
@@ -10,14 +10,20 @@
 
                     input {
                         width: 100%;
-                        border: 2px solid #3F3D56;
+                        border: 1px solid #3F3D56;
                         box-sizing: border-box;
                         border-radius: 20px;
                         height: 74px;
+                        margin-right: 20px;
+                        @include transition-ease;
+
+                        &:hover, &:focus {
+                            border: 2px solid #3F3D56;
+                        }
                     }
                     button {
                         background: $primary-color;
-                        border: 2px solid $tertiary-color;
+                        border: 1px solid $tertiary-color;
                         box-sizing: border-box;
                         border-radius: 20px;
                         font-size: 20px;
@@ -41,14 +47,14 @@
                     width: 150px;
                     height: 60px;
                     border-radius: 20px;
-                    border: 2px solid $text-color;
                     display: flex;
                     font-size: 15px;
                     // line-height: 24px;
                     padding: 5px 10px;
                     margin-right: 10px;
                     align-items: center;
-                    cursor: cell;
+                    cursor: default;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
                     @include transition-ease;
 
                     img {
@@ -70,7 +76,8 @@
                     }
 
                     &:hover {
-                        box-shadow: 5px 5px 5px #aaaaaa;
+                        border: 0;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
                     }
                 }
                 
@@ -81,20 +88,21 @@
 
 @include media-md{
     .subscribe-action {
+        margin-top: 130px;
     
         .container {
             .content {
                 .form{
                     .form-element {
                         flex-direction: row;
-                        justify-content: space-between;
+                        justify-content: center;
     
                         input {
-                            width: 65%;
+                            width: 55%;
                             height: 74px;
                         }
                         button {
-                            width: 30%;
+                            width: 25%;
                             height: 74px;
                         }
                     }
@@ -107,7 +115,6 @@
                         width: 202px;
                         height: 74px;
                         border-radius: 20px;
-                        border: 2px solid $text-color;
                         display: flex;
                         font-size: 20px;
                         line-height: 24px;

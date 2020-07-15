@@ -19,50 +19,35 @@
                 </p>
                 <div class="timer">
                     <div class="time">
-                        <span id="time-days"></span>
+                        <span id="time-days">00</span>
                         <span>Days</span>
                     </div>
                     <div class="time-spacer">
                         :
                     </div>
                     <div class="time"> 
-                        <span id="time-hours"></span> 
+                        <span id="time-hours">00</span> 
                         <span>Hours</span> 
                     </div>
                     <div class="time-spacer">
                         :
                     </div>
                     <div class="time">
-                        <span id="time-minutes"></span> 
+                        <span id="time-minutes">00</span> 
                         <span>Minutes</span> 
                     </div>
                     <div class="time-spacer">
                         :
                     </div>
                     <div class="time">
-                        <span id="time-seconds"></span>
+                        <span id="time-seconds">00</span>
                         <span>Seconds</span>
                     </div>
                 </div>
-                <div class="demo" id="demo"></div>
             </div>
             <div class="banner-image text-center">
                 <img src="public/img/banner-woman-complete.png" />
             </div>
-            <!-- <img class="banner-cloud banner-cloud-1" src="public/img/banner-cloud-1.png" />
-            <img class="banner-cloud banner-cloud-2" src="public/img/banner-cloud-2.png" />
-            <img class="banner-cloud banner-cloud-3" src="public/img/banner-cloud-3.png" />
-            
-            
-            <img class="banner-shadow" src="public/img/banner-shadow.png" />
-            <img class="banner-woman" src="public/img/banner-woman.png" />
-            <img class="banner-shrub-left" src="public/img/banner-shrub-left.png" />
-            <img class="banner-shrub-right" src="public/img/banner-shrub-right.png" />
-
-            <img class="banner-phone banner-phone-1" src="public/img/banner-phone.png" />
-            <img class="banner-phone banner-phone-2 devugo-up-down" src="public/img/banner-phone-2.png" />
-            <img class="banner-phone banner-phone-3 devugo-up-down-2" src="public/img/banner-phone-1.png" />
-            <img class="banner-phone banner-phone-4 devugo-slide" src="public/img/banner-phone-3.png" /> -->
 
         </div>
     </section>
@@ -99,20 +84,20 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/basket-ball-environ.png" />
                             <img class="basket-ball" src="public/img/basket-baller.png" />
                             <p>Free Access<br /> and SignUp</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/lawn-tennis.png" />
                             <p>Documentation<br /> and Verification</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/jogging.png" />
                             <img class="jogging-wave-1" src="public/img/jogging-wave-1.png" />
                             <img class="jogging-wave-2" src="public/img/jogging-wave-2.png" />
@@ -121,20 +106,20 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/trainer.png" />
                             <p>Cutting Edge <br /> Technology</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/footballer.png" />
                             <img class="football" src="public/img/football.png" />
                             <p>Get In the <br /> Best Leagues</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="col-content">
+                        <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/realtime.png" />
                             <!-- <img class="basket-ball" src="public/img/basket-baller.png" /> -->
                             <p>Real Time <br /> Assessments</p>
@@ -147,36 +132,34 @@
 
     <section class="app-screens">
         <div class="container">
-            <div class="content">
+            <div class="content text-center">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
                             
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
                             
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
                             
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="col-content">
                             
                         </div>
@@ -210,6 +193,10 @@
 
     <script src="public/js/aos.min.js"></script>
     <script src="public/js/countdown.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script>
     document.getElementById("subscription-form").addEventListener("submit", submitForm);
