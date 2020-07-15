@@ -1,0 +1,146 @@
+.basket-ball {
+    animation-name: basket-ball;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes basket-ball {
+    0%   { top: 60px; left: 50%; }
+    100% { top: 90px; left: calc(50% - 40px); }
+}
+
+.reader {
+    animation-name: reader;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes reader {
+    0%   { width: 35px; }
+    50%  { width: 45px; }
+    100% { width: 35px; }
+}
+
+.jogging-wave-1 {
+    animation-name: jogging-wave-1;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jogging-wave-1 {
+    0%   { height: 55px; }
+    50%  { height: 78px; }
+    100% { height: 55px; }
+}
+
+.jogging-wave-2 {
+    animation-name: jogging-wave-2;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jogging-wave-2 {
+    0%   { height: 49px; }
+    50%  { height: 57px; }
+    100% { height: 49px; }
+}
+
+.football {
+    animation-name: football;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes football {
+    0%   { bottom: 130px; }
+    50%  { bottom: 96px; }
+    100% { bottom: 130px; }
+}
+
+.how-it-works {
+    .container {
+        .content {
+            .section-title {
+                h3 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 55px;
+                    color: $text-color;
+                }
+            }
+
+            .col-content {
+                position: relative;
+                // background-color: red;
+                height: 300px;
+                width: 100%;
+                margin-bottom: 30px;
+
+                img {
+                    position: absolute;
+
+                    &:first-child {
+                        top: 50px;
+                        left: calc(50% - 100px);
+                    }
+
+                    &:last-child {
+                        top: 60px;
+                        left: calc(50%);
+                    }
+                }
+                .jogging-wave-1, .jogging-wave-2{
+                    position: absolute;
+                    bottom: 42%;
+                    width: 56px;
+                    left: calc(50% - 28px);
+                }
+                .jogging-wave-1{
+                    height: 78px;
+                }
+                .jogging-wave-2{
+                    height: 57px;
+                }
+                .reader {
+                    background-color: #736E9E;;
+                    height: 20px;
+                    width: 45px;
+                    position: absolute;
+                    top: 55%;
+                    left: calc(50% - 23px);
+                }
+                .football {
+                    bottom: 96px;
+                    left: calc(50% - 45px);
+                }
+                p{
+                    position: absolute;
+                    bottom: 0px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    left: 35%;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+@include media-md {
+    .how-it-works {
+        .container {
+            .content {
+                .section-title {
+                    h3 {
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+}

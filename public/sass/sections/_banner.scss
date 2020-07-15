@@ -1,11 +1,51 @@
+.devugo-slide {
+    animation-name: devugo-slide;
+    animation-timing-function: linear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes devugo-slide {
+    0%   { width: 150px; }
+    50%  { width:  207.43px; }
+    100% { width: 150px; }
+}
+
+.devugo-up-down {
+    animation-name: devugo-up-down;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes devugo-up-down {
+    0%   { height: 140px; }
+    50%  { height: 220.41px; }
+    100% { height: 140px; }
+}
+
+.devugo-up-down-2 {
+    animation-name: devugo-up-down-2;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes devugo-up-down-2 {
+    0%   { height: 150px; }
+    50%  { height: 192.57px; }
+    100% { height: 150px; }
+}
+
+
 .banner {
     background-image: url('../../public/img/banner-bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 774.03px;
+    height: 650.03px;
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
 
     .content {
         h2{
@@ -35,6 +75,100 @@
                 left: 15%;
             }
         }
+        .timer {
+            color: $text-color;
+            display: flex;
+            justify-content: center;
+            div {
+                margin-right: 20px;
+            }
+
+            .time {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                &::after {
+                    content: ':';
+                    position: absolute;
+                    top: 60px;
+                    left: 20px;
+                    color: $text-color;
+                }
+                span:first-child{
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 63px;
+                }
+                span:last-child {
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-top: -10px;
+                }
+                &-spacer {
+                    font-weight: 600;
+                    font-size: 48px;
+                    margin-top: -10px;
+                }
+            }
+        }
+        .banner-image img {
+            width: 320px;
+            height: 400px;
+            // margin-top: 100px;
+        }
+
+        .banner-phone {
+            position: absolute;
+
+            &-1 {
+                left: calc(50% - 149.4px);
+                // width: 299.87px;
+            }
+
+            &-2 {
+                // width: 261.13px;
+                left: calc(50% - 130.56px);
+                bottom: -30px;
+                width: 261.13px;
+            }
+            &-3{
+                // width: 261.13px;
+                left: calc(50% - 130.56px);
+                bottom: -30px;
+                width: 261.13px;
+                // height: 192.57px;
+            }
+            &-4{
+                // width: 207.43px;
+                left: calc(50% - 103.71px);
+                bottom: -63px;
+                height: 60.73px;
+            }
+
+        }
+        .banner-woman {
+            position: absolute;
+            left: 23%;
+            bottom: -230px;
+        }        
+
+        .banner-shadow {
+            position: absolute;
+            bottom: -240px;
+            left: 20%;
+            width: 340px;
+        }
+        .banner-shrub-left {
+            position: absolute;
+            left: 24%;
+            bottom: -220px;
+        }
+        .banner-shrub-right {
+            position: absolute;
+            right: 24%;
+            bottom: -220px;
+        }
     }
 }
 
@@ -48,7 +182,27 @@
             p{
                 font-size: 30px;
             }
+            .banner-shadow {
+                width: 700px;
+            }
+            .banner-image img {
+                width: 600px;
+                height: 450px;
+            }
+        }
+    }
+}
 
+@include media-md-bootstrap {
+    .banner {
+        .content {
+            .banner-shadow {
+                width: 900px;
+            }
+            .banner-image img {
+                width: 700px;
+                height: 450px;
+            }
         }
     }
 }

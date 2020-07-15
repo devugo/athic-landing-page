@@ -17,27 +17,74 @@
                 <p>The game changer for professionals<br />
                     and budding sport enthusiasts.
                 </p>
+                <div class="timer">
+                    <div class="time">
+                        <span id="time-days"></span>
+                        <span>Days</span>
+                    </div>
+                    <div class="time-spacer">
+                        :
+                    </div>
+                    <div class="time"> 
+                        <span id="time-hours"></span> 
+                        <span>Hours</span> 
+                    </div>
+                    <div class="time-spacer">
+                        :
+                    </div>
+                    <div class="time">
+                        <span id="time-minutes"></span> 
+                        <span>Minutes</span> 
+                    </div>
+                    <div class="time-spacer">
+                        :
+                    </div>
+                    <div class="time">
+                        <span id="time-seconds"></span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <div class="demo" id="demo"></div>
             </div>
-            <img class="banner-cloud banner-cloud-1" src="public/img/banner-cloud-1.png" />
+            <div class="banner-image text-center">
+                <img src="public/img/banner-woman-complete.png" />
+            </div>
+            <!-- <img class="banner-cloud banner-cloud-1" src="public/img/banner-cloud-1.png" />
             <img class="banner-cloud banner-cloud-2" src="public/img/banner-cloud-2.png" />
             <img class="banner-cloud banner-cloud-3" src="public/img/banner-cloud-3.png" />
+            
+            
+            <img class="banner-shadow" src="public/img/banner-shadow.png" />
+            <img class="banner-woman" src="public/img/banner-woman.png" />
+            <img class="banner-shrub-left" src="public/img/banner-shrub-left.png" />
+            <img class="banner-shrub-right" src="public/img/banner-shrub-right.png" />
+
+            <img class="banner-phone banner-phone-1" src="public/img/banner-phone.png" />
+            <img class="banner-phone banner-phone-2 devugo-up-down" src="public/img/banner-phone-2.png" />
+            <img class="banner-phone banner-phone-3 devugo-up-down-2" src="public/img/banner-phone-1.png" />
+            <img class="banner-phone banner-phone-4 devugo-slide" src="public/img/banner-phone-3.png" /> -->
+
         </div>
     </section>
-    <section>
+    <section class="subscribe-action">
         <div class="container">
-            <div class="content">
+            <div class="content"> 
                 <div class="form">
                     <form id="subscription-form">
-                        <input placeholder="Enter a valid email address" name="subscribe" id="email" />
-                        <button type="submit">Notify Me</button>
+                        <div class="form-element">
+                            <input placeholder="Enter a valid email address" name="subscribe" id="email" />
+                            <button class="btn" type="submit">Notify Me</button>
+                        </div>
                     </form>
                 </div>
                 <div class="mobile-stores">
-                    <div class="appstore">
-
+                    <div class="mobile-store appstore">
+                        <img src="public/img/app-store.png" />
+                        <p>Coming To App Sore</p>
                     </div>
-                    <div class="playstore">
-
+                    <div class="mobile-store playstore">
+                        <img src="public/img/play-store.png" />
+                        <p>Coming TO Play Store</p>
                     </div>
                 </div>
             </div>
@@ -46,24 +93,51 @@
 
     <section class="how-it-works">
         <div class="container">
-            <div class="content">
+            <div class="content text-center">
                 <div class="section-title">
                     <h3>How it works</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="col-content">
-                            
+                            <img src="public/img/basket-ball-environ.png" />
+                            <img class="basket-ball" src="public/img/basket-baller.png" />
+                            <p>Free Access<br /> and SignUp</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="col-content">
-                            
+                            <img src="public/img/lawn-tennis.png" />
+                            <p>Documentation<br /> and Verification</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="col-content">
-                            
+                            <img src="public/img/jogging.png" />
+                            <img class="jogging-wave-1" src="public/img/jogging-wave-1.png" />
+                            <img class="jogging-wave-2" src="public/img/jogging-wave-2.png" />
+                            <div class="reader"></div>
+                            <p>Training and <br /> Work-outs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-content">
+                            <img src="public/img/trainer.png" />
+                            <p>Cutting Edge <br /> Technology</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-content">
+                            <img src="public/img/footballer.png" />
+                            <img class="football" src="public/img/football.png" />
+                            <p>Get In the <br /> Best Leagues</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-content">
+                            <img src="public/img/realtime.png" />
+                            <!-- <img class="basket-ball" src="public/img/basket-baller.png" /> -->
+                            <p>Real Time <br /> Assessments</p>
                         </div>
                     </div>
                 </div>
@@ -135,6 +209,7 @@
     <script src="public/js/sweetalert.min.js"></script>
 
     <script src="public/js/aos.min.js"></script>
+    <script src="public/js/countdown.js"></script>
 </body>
 <script>
     document.getElementById("subscription-form").addEventListener("submit", submitForm);
