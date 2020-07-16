@@ -9,6 +9,7 @@
     <link href="public/css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="public/css/main.css">
     
+    <link rel="stylesheet" href="public/css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -149,32 +150,30 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content">
-
+                            <a href="public/img/screen-1.png" class="with-caption image-link" title="The caption 1">
+                                <img src="public/img/screen-1.png" width="172" height="100%" />  
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content">
-                            
+                            <a href="public/img/screen-2.png" class="with-caption image-link" title="The caption 1">
+                                <img src="public/img/screen-2.png" width="172" height="100%" />  
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content">
-                            
+                            <a href="public/img/screen-3.png" class="with-caption image-link" title="The caption 1">
+                                <img src="public/img/screen-3.png" width="172" height="100%" />  
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content">
-
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            
+                            <a href="public/img/screen-4.png" class="with-caption image-link" title="The caption 1">
+                                <img src="public/img/screen-4.png" width="172" height="100%" />  
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -213,11 +212,12 @@
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/axios.min.js"></script>
     <script src="public/js/sweetalert.min.js"></script>
-
     <script src="public/js/aos.min.js"></script>
+    <script src="public/js/magnific-popup.min.js"></script>
+
     <script src="public/js/countdown.js"></script>
     <script src="public/js/form.js"></script>
-
+    <script src="public/js/popup.js"></script>
     <script>
         AOS.init();
     </script>
