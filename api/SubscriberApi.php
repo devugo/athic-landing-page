@@ -47,7 +47,11 @@ class SubscriberApi {
         if($validation->passed()){
             $subscriber = new Subscriber();
             try {
+                // Save resource
                 $subscriber->create($inputValues);
+
+                //  send email
+                Mailer::send($input['email'], 'ATHIC SPORT APP', 'Thank you for subscribing to the game changer for professionals and budding sport enthusiasts. You will be notified once our app launches');
                 $response['status_code_header'] = 'HTTP/1.1 201 Created';
                 $response['body'] = json_encode($inputValues);
                 
