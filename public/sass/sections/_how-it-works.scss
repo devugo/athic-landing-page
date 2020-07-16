@@ -62,6 +62,19 @@
     100% { bottom: 130px; }
 }
 
+.lawn-tennis-ball {
+    animation-name: lawn-tennis-ball;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lawn-tennis-ball {
+    0%   { width: 3px; }
+    50%  { width: 20px; }
+    100% { width: 3px; }
+}
+
 .how-it-works {
     margin-top: 70px;
     .container {
@@ -95,6 +108,13 @@
                         left: calc(50%);
                     }
                 }
+                .lawn-tennis-ball{
+                    position: absolute;
+                    top: 140px;
+                    left: calc(50% - 15px);
+                    width: 3px;
+                }
+
                 .jogging-wave-1, .jogging-wave-2{
                     position: absolute;
                     bottom: 42%;
@@ -126,6 +146,29 @@
                     line-height: 24px;
                     left: 33%;
                     color: $text-color;
+                }
+                .realtime__black-pill {
+                    position: absolute;
+                    width: 12.22px;
+                    height: 4.97px;
+                    background: $text-color;
+                    border-radius: 2px;
+                    left: calc(50% - 24px);
+
+                    &-1 {
+                        top: 75px;
+                    }
+                    &-2 {
+                        top: 105px;
+                    }
+                    &-3 {
+                        top: 133px;
+                    }
+                }
+                .realtime__blue-pill {
+                    width: 51.8px;
+                    height: 4.97px;
+                    background: $secondary-color;
                 }
             }
         }

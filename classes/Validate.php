@@ -27,16 +27,6 @@
                                     }
                                 }
                             break;
-                            case 'max':
-                            if(strlen($value) > $rule_value){
-                                $this->addError("{$item} must be a maximum of {$rule_value} characters.");
-                            }
-                            break;
-                            case 'matches':
-                                if($value != $source[$rule_value]){
-                                    $this->addError("{$rule_value} must match {$item}");
-                                }
-                            break;
                             case 'unique':
                                 $check = $this->_db->get($rule_value, array($item, '=', $value));
                                 if($check->count()){
@@ -70,14 +60,3 @@
             return $this->_passed;
         }
     }
-
-
-
-
-    /**
-     * Validate Email Address
-     */
-    // $email = test_input($_POST["email"]);
-    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    //   $emailErr = "Invalid email format";
-    // }

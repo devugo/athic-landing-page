@@ -500,7 +500,9 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
     font-size: 20px;
     line-height: 24px;
     padding: 10px 20px;
-    margin-right: 10px;
+  }
+  .subscribe-action .container .content .mobile-stores .mobile-store:first-child {
+    margin-right: 100px;
   }
   .subscribe-action .container .content .mobile-stores .mobile-store img {
     margin-right: 10px;
@@ -687,6 +689,41 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   }
 }
 
+.lawn-tennis-ball {
+  -webkit-animation-name: lawn-tennis-ball;
+          animation-name: lawn-tennis-ball;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes lawn-tennis-ball {
+  0% {
+    width: 3px;
+  }
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 3px;
+  }
+}
+
+@keyframes lawn-tennis-ball {
+  0% {
+    width: 3px;
+  }
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 3px;
+  }
+}
+
 .how-it-works {
   margin-top: 70px;
 }
@@ -717,6 +754,13 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 .how-it-works .container .content .col-content img:last-child {
   top: 60px;
   left: calc(50%);
+}
+
+.how-it-works .container .content .col-content .lawn-tennis-ball {
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 15px);
+  width: 3px;
 }
 
 .how-it-works .container .content .col-content .jogging-wave-1, .how-it-works .container .content .col-content .jogging-wave-2 {
@@ -755,6 +799,33 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   line-height: 24px;
   left: 33%;
   color: #3F3D56;
+}
+
+.how-it-works .container .content .col-content .realtime__black-pill {
+  position: absolute;
+  width: 12.22px;
+  height: 4.97px;
+  background: #3F3D56;
+  border-radius: 2px;
+  left: calc(50% - 24px);
+}
+
+.how-it-works .container .content .col-content .realtime__black-pill-1 {
+  top: 75px;
+}
+
+.how-it-works .container .content .col-content .realtime__black-pill-2 {
+  top: 105px;
+}
+
+.how-it-works .container .content .col-content .realtime__black-pill-3 {
+  top: 133px;
+}
+
+.how-it-works .container .content .col-content .realtime__blue-pill {
+  width: 51.8px;
+  height: 4.97px;
+  background: #6C63FF;
 }
 
 @media screen and (min-width: 768px) {

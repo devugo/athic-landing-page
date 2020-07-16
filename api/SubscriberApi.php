@@ -3,6 +3,8 @@
 class SubscriberApi {
 
     private $requestMethod;
+
+    //  Validation rules
     private $rules = array(
         'email' => array(
             'required' => true,
@@ -19,9 +21,6 @@ class SubscriberApi {
     public function processRequest()
     {
         switch ($this->requestMethod) {
-            case 'GET':
-                $response = $this->getAllSubscribers();
-                break;
             case 'POST':
                 $response = $this->createSubscriberFromRequest();
                 break;
@@ -38,23 +37,19 @@ class SubscriberApi {
     private function createSubscriberFromRequest()
     {
         $input = (array) json_decode(file_get_contents('php://input'), TRUE);
+        $inputValues = array(
+            'email' => $input['email'],
+            'created_at' => date('Y-m-d H:i:s')
+        );
         
         $validate = new Validate();
         $validation = $validate->check($input, $this->rules);
         if($validation->passed()){
             $subscriber = new Subscriber();
             try {
-                $subscriber->create(array(
-                    'email' => $input['email'],
-                    'created_at' => date('Y-m-d H:i:s')
-                ));
+                $subscriber->create($inputValues);
                 $response['status_code_header'] = 'HTTP/1.1 201 Created';
-                $response['body'] = json_encode(
-                    array(
-                        'email' => $input['email'],
-                        'created_at' => date('Y-m-d H:i:s')
-                    )
-                );
+                $response['body'] = json_encode($inputValues);
                 
             }catch(Exception $e){
                 die($e->getMessage());

@@ -19,7 +19,7 @@
                         and budding sport enthusiasts.
                     </p>
                 </div>
-                <div class="timer" data-aos="fade-left">
+                <div id="timer" class="timer" data-aos="fade-left">
                     <div class="time">
                         <span id="time-days">00</span>
                         <span>Days</span>
@@ -95,6 +95,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/lawn-tennis.png" />
+                            <img class="lawn-tennis-ball" src="public/img/lawn-tennis-ball.png" />
                             <p>Documentation<br /> and Verification</p>
                         </div>
                     </div>
@@ -123,6 +124,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="col-content" data-aos="zoom-in">
                             <img src="public/img/realtime.png" />
+                            <div class="realtime__black-pill realtime__black-pill-1"></div>
+                            <div class="realtime__black-pill realtime__black-pill-2"></div>
+                            <div class="realtime__black-pill realtime__black-pill-3"></div>
+
+                            <div class="realtime__blue-pill realtime__blue-pill-1"></div>
+                            <div class="realtime__blue-pill realtime__blue-pill-2"></div>
+
+                            <div class="realtime__ash-pill realtime__ash-pill-1"></div>
                             <!-- <img class="basket-ball" src="public/img/basket-baller.png" /> -->
                             <p>Real Time <br /> Assessments</p>
                         </div>
