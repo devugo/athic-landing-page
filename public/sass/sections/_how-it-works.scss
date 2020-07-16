@@ -1,8 +1,7 @@
 .basket-ball {
+    @include animation-continous;
     animation-name: basket-ball;
-    animation-timing-function: linear;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes basket-ball {
@@ -11,10 +10,9 @@
 }
 
 .reader {
+    @include animation-continous;
     animation-name: reader;
-    animation-timing-function: linear;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes reader {
@@ -24,10 +22,9 @@
 }
 
 .jogging-wave-1 {
+    @include animation-continous;
     animation-name: jogging-wave-1;
-    animation-timing-function: linear;
     animation-duration: 6s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes jogging-wave-1 {
@@ -37,10 +34,9 @@
 }
 
 .jogging-wave-2 {
+    @include animation-continous;
     animation-name: jogging-wave-2;
-    animation-timing-function: linear;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes jogging-wave-2 {
@@ -50,10 +46,9 @@
 }
 
 .football {
+    @include animation-continous;
     animation-name: football;
-    animation-timing-function: linear;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes football {
@@ -63,16 +58,51 @@
 }
 
 .lawn-tennis-ball {
+    @include animation-continous;
     animation-name: lawn-tennis-ball;
-    animation-timing-function: linear;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 @keyframes lawn-tennis-ball {
     0%   { width: 3px; }
     50%  { width: 20px; }
     100% { width: 3px; }
+}
+
+.realtime__black-pill {
+    @include animation-continous;
+    animation-name: realtime__black-pill;
+    animation-duration: 4s;
+}
+
+@keyframes realtime__black-pill {
+    0%   { width: 8px; }
+    50%  { width: 12.22px; }
+    100% { width: 8px; }
+}
+
+.realtime__blue-pill {
+    @include animation-continous;
+    animation-name: realtime__blue-pill;
+    animation-duration: 6s;
+}
+
+@keyframes realtime__blue-pill {
+    0%   { width: 28px; }
+    50%  { width: 48px; }
+    100% { width: 28px; }
+}
+
+.realtime__ash-pill {
+    @include animation-continous;
+    animation-name: realtime__ash-pill;
+    animation-duration: 5s;
+}
+
+@keyframes realtime__ash-pill {
+    0%   { width: 20px; }
+    50%  { width: 48px; }
+    100% { width: 20px; }
 }
 
 .how-it-works {
@@ -166,9 +196,31 @@
                     }
                 }
                 .realtime__blue-pill {
-                    width: 51.8px;
+                    width: 48px;
                     height: 4.97px;
                     background: $secondary-color;
+                    border-radius: 2px;
+                    position: absolute;
+                    left: calc(50% - 24px);
+
+                    &-1 {
+                        top: 85px;
+                    }
+                    &-2 {
+                        top: 115px;
+                    }
+                }
+                .realtime__ash-pill {
+                    width: 48px;
+                    height: 4.97px;
+                    background: #e5e5e5;
+                    border-radius: 2px;
+                    position: absolute;
+                    left: calc(50% - 24px);
+
+                    &-1 {
+                        top: 143px;
+                    }
                 }
             }
         }

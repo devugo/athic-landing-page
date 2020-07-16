@@ -517,14 +517,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .basket-ball {
-  -webkit-animation-name: basket-ball;
-          animation-name: basket-ball;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: basket-ball;
+          animation-name: basket-ball;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes basket-ball {
@@ -550,14 +550,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .reader {
-  -webkit-animation-name: reader;
-          animation-name: reader;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: reader;
+          animation-name: reader;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @-webkit-keyframes reader {
@@ -585,14 +585,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .jogging-wave-1 {
-  -webkit-animation-name: jogging-wave-1;
-          animation-name: jogging-wave-1;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: jogging-wave-1;
+          animation-name: jogging-wave-1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 @-webkit-keyframes jogging-wave-1 {
@@ -620,14 +620,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .jogging-wave-2 {
-  -webkit-animation-name: jogging-wave-2;
-          animation-name: jogging-wave-2;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: jogging-wave-2;
+          animation-name: jogging-wave-2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes jogging-wave-2 {
@@ -655,14 +655,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .football {
-  -webkit-animation-name: football;
-          animation-name: football;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: football;
+          animation-name: football;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 @-webkit-keyframes football {
@@ -690,14 +690,14 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .lawn-tennis-ball {
-  -webkit-animation-name: lawn-tennis-ball;
-          animation-name: lawn-tennis-ball;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: lawn-tennis-ball;
+          animation-name: lawn-tennis-ball;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes lawn-tennis-ball {
@@ -721,6 +721,111 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   }
   100% {
     width: 3px;
+  }
+}
+
+.realtime__black-pill {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: realtime__black-pill;
+          animation-name: realtime__black-pill;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes realtime__black-pill {
+  0% {
+    width: 8px;
+  }
+  50% {
+    width: 12.22px;
+  }
+  100% {
+    width: 8px;
+  }
+}
+
+@keyframes realtime__black-pill {
+  0% {
+    width: 8px;
+  }
+  50% {
+    width: 12.22px;
+  }
+  100% {
+    width: 8px;
+  }
+}
+
+.realtime__blue-pill {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: realtime__blue-pill;
+          animation-name: realtime__blue-pill;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+@-webkit-keyframes realtime__blue-pill {
+  0% {
+    width: 28px;
+  }
+  50% {
+    width: 48px;
+  }
+  100% {
+    width: 28px;
+  }
+}
+
+@keyframes realtime__blue-pill {
+  0% {
+    width: 28px;
+  }
+  50% {
+    width: 48px;
+  }
+  100% {
+    width: 28px;
+  }
+}
+
+.realtime__ash-pill {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: realtime__ash-pill;
+          animation-name: realtime__ash-pill;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes realtime__ash-pill {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 48px;
+  }
+  100% {
+    width: 20px;
+  }
+}
+
+@keyframes realtime__ash-pill {
+  0% {
+    width: 20px;
+  }
+  50% {
+    width: 48px;
+  }
+  100% {
+    width: 20px;
   }
 }
 
@@ -823,9 +928,33 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 }
 
 .how-it-works .container .content .col-content .realtime__blue-pill {
-  width: 51.8px;
+  width: 48px;
   height: 4.97px;
   background: #6C63FF;
+  border-radius: 2px;
+  position: absolute;
+  left: calc(50% - 24px);
+}
+
+.how-it-works .container .content .col-content .realtime__blue-pill-1 {
+  top: 85px;
+}
+
+.how-it-works .container .content .col-content .realtime__blue-pill-2 {
+  top: 115px;
+}
+
+.how-it-works .container .content .col-content .realtime__ash-pill {
+  width: 48px;
+  height: 4.97px;
+  background: #e5e5e5;
+  border-radius: 2px;
+  position: absolute;
+  left: calc(50% - 24px);
+}
+
+.how-it-works .container .content .col-content .realtime__ash-pill-1 {
+  top: 143px;
 }
 
 @media screen and (min-width: 768px) {
