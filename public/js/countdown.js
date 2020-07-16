@@ -1,7 +1,17 @@
+/**
+ * Get Element by ID
+ * 
+ * @param {*string} id 
+ */
 function getId(id) {
   return document.getElementById(id);
 }
 
+/**
+ * Format time to double number if single
+ * 
+ * @param {*int} value 
+ */
 function formatTime(value){
   return value.toString().length == 1 ? `0${value}` : value;
 }
@@ -10,7 +20,7 @@ function formatTime(value){
 var countDownDate = new Date("Jul 29, 2020 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var countdown = setInterval(function() {
 
   // Get today's time string
   var currentDateTime = new Date().getTime();
@@ -32,7 +42,7 @@ var x = setInterval(function() {
 
   // If it is done counting down
   if (difference < 0) {
-    clearInterval(x);
+    clearInterval(countdown);
     document.getElementById("timer").innerHTML = "WE ARE HERE!";
   }
 }, 1000);

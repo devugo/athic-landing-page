@@ -8,6 +8,8 @@
     <link href="public/css/aos.min.css" rel="stylesheet">
     <link href="public/css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="public/css/main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="banner">
@@ -59,8 +61,8 @@
                 <div class="form">
                     <form id="subscription-form">
                         <div class="form-element" data-aos="fade-up">
-                            <input placeholder="Enter a valid email address" name="subscribe" id="email" />
-                            <button class="btn" type="submit">Notify Me</button>
+                            <input placeholder="Enter a valid email address" name="email" id="email" />
+                            <button id="submit" class="btn" type="submit">Notify Me</button>
                         </div>
                     </form>
                 </div>
@@ -189,8 +191,8 @@
                 <div class="form">
                     <form id="subscription-form-2">
                         <div class="form-element">
-                            <input placeholder="Enter a valid email address" name="email_2" id="email_2" />
-                            <button class="btn" type="submit">Notify Me</button>
+                            <input placeholder="Enter a valid email address" name="email-2" id="email-2" />
+                            <button id="submit-2" class="btn" type="submit">Notify Me</button>
                         </div>
                     </form>
                 </div>
