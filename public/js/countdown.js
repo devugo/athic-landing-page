@@ -2,6 +2,10 @@ function getId(id) {
   return document.getElementById(id);
 }
 
+function formatTime(value){
+  return value.toString().length == 1 ? `0${value}` : value;
+}
+
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 29, 2020 15:37:25").getTime();
 
@@ -21,10 +25,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
   // Display the result in the elements respectively
-  getId("time-days").innerText = days;
-  getId("time-hours").innerText = hours;
-  getId("time-minutes").innerText = minutes;
-  getId("time-seconds").innerText = seconds;
+  getId("time-days").innerText = formatTime(days)
+  getId("time-hours").innerText = formatTime(hours);
+  getId("time-minutes").innerText = formatTime(minutes);
+  getId("time-seconds").innerText = formatTime(seconds);
 
   // If it is done counting down
   if (difference < 0) {
