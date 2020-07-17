@@ -6,6 +6,11 @@
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $uri = explode( '/', $uri );
 
+    if($uri[1] === 'subscribers'){
+        require_once 'public/subscribers.php';
+        exit();
+    }
+
      // all of our endpoints start with /person
     // everything else results in a 404 Not Found
     if ($uri[1] !== 'subscribe' || $_SERVER["REQUEST_METHOD"] === 'GET') {

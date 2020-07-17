@@ -29,15 +29,21 @@
             return false;
         }
 
+        public function all() {
+            $data = $this->_db->get('subscribers', array());
+
+            if($data->count()){
+                $this->_data = $data->results();
+                return $this->data();
+            }
+            return false;
+        }
+
         public function exists(){
             return (!empty($this->_data)) ? true : false;
         }
 
         public function data(){
             return $this->_data;
-        }
-
-        public function isloggedIn(){
-            return $this->_isLoggedIn;
         }
     }

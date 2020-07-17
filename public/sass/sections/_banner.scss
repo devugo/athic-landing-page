@@ -53,13 +53,27 @@
             font-weight: bold;
             font-size: 34px;
             line-height: 78px;
-            text-shadow: 2px 2px 4px #fff;
+            text-shadow: 1px 1px 3px #fff;
         }
         p{
             font-weight: 500;
             font-size: 20px;
             line-height: 37px;
+            margin-top: -20px;
         }
+
+        .launch-text{
+            margin-top: 30px;
+            small{
+                text-shadow: 1px 1px 3px #fff;
+                background-color: $text-color;
+                padding: 5px 10px;
+                width: 200px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        }
+
         .banner-cloud {
             position: absolute;
 
@@ -82,6 +96,7 @@
             display: flex;
             justify-content: center;
             div {
+                // margin-right: 10px;
                 margin-right: 10px;
             }
 
@@ -89,19 +104,11 @@
                 position: relative;
                 display: flex;
                 flex-direction: column;
-
-                &::after {
-                    content: ':';
-                    position: absolute;
-                    top: 60px;
-                    left: 20px;
-                    color: $text-color;
-                }
                 span:first-child{
                     font-weight: 600;
                     font-size: 35px;
                     line-height: 63px;
-                    text-shadow: 2px 2px 4px #000000;
+                    text-shadow: 1px 1px 3px #000000;
                 }
                 span:last-child {
                     font-size: 16px;
@@ -118,7 +125,7 @@
         .banner-image img {
             width: 320px;
             height: 350px;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .banner-phone {
@@ -180,10 +187,10 @@
     .banner {
         .content {
             h2{
-                font-size: 64px;
+                font-size: 54px;
             }
             p{
-                font-size: 30px;
+                font-size: 25px;
             }
             .timer {
                 color: $text-color;
@@ -191,7 +198,8 @@
                 justify-content: center;
 
                 div {
-                    margin-right: 20px;
+                    // margin-right: 20px;
+                    // margin-left: 20px;
                 }
     
                 .time {

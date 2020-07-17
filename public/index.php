@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATHIC</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon.png">
+
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link href="public/css/aos.min.css" rel="stylesheet">
     <link href="public/css/animate.min.css" rel="stylesheet">
@@ -22,6 +24,7 @@
                         and budding sport enthusiasts.
                     </p>
                 </div>
+                <div class="launch-text"><small>We launch in</small></div>
                 <div id="timer" class="timer" data-aos="fade-left">
                     <div class="time">
                         <span id="time-days">00</span>
@@ -149,29 +152,29 @@
             <div class="content text-center">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            <a href="public/img/screen-1.png" class="with-caption image-link" title="The caption 1">
-                                <img src="public/img/screen-1.png" width="172" height="100%" />  
+                        <div class="col-content" data-aos="fade-right">
+                            <a href="public/img/screen-1.png" class="with-caption image-link" title="How it works">
+                                <img src="public/img/screen-1.png" />  
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            <a href="public/img/screen-2.png" class="with-caption image-link" title="The caption 1">
+                        <div class="col-content" data-aos="fade-left">
+                            <a href="public/img/screen-2.png" class="with-caption image-link" title="Assessment">
                                 <img src="public/img/screen-2.png" width="172" height="100%" />  
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            <a href="public/img/screen-3.png" class="with-caption image-link" title="The caption 1">
+                        <div class="col-content" data-aos="fade-right">
+                            <a href="public/img/screen-3.png" class="with-caption image-link" title="Athletes">
                                 <img src="public/img/screen-3.png" width="172" height="100%" />  
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="col-content">
-                            <a href="public/img/screen-4.png" class="with-caption image-link" title="The caption 1">
+                        <div class="col-content" data-aos="fade-left">
+                            <a href="public/img/screen-4.png" class="with-caption image-link" title="Agents">
                                 <img src="public/img/screen-4.png" width="172" height="100%" />  
                             </a>
                         </div>
@@ -202,8 +205,28 @@
     <section class="social-nav">
         <div class="container">
             <div class="content text-center">
-                <img src="public/img/social-bottom.png" />
+                <!-- <img src="public/img/social-bottom.png" /> -->
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="content-around">
+                    <div class="background-ball background-ball-1"></div>
+                    <div class="background-ball background-ball-2"></div>
+                    <div class="background-ball background-ball-3"></div>
+                </div>
             </div>
+        <img src="public/img/ellipse.png" />
         </div>
     </section>
 

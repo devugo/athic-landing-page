@@ -7,6 +7,20 @@
                 width: 100%;
                 height: 300px;
                 margin-bottom: 30px;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                @include transition-ease;
+
+                img {
+                    height: 60% !important;
+                    width: 172px;
+                    @include transition-ease;
+
+                    &:hover {
+                        filter: brightness(80%);
+                    }
+                }
             }
         }
     }
