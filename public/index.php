@@ -153,30 +153,47 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content" data-aos="fade-right">
-                            <a href="public/img/screen-1.png" class="with-caption image-link" title="How it works">
+                            <a href="public/img/screen-1.png" class="with-caption image-link" title="Home page">
                                 <img src="public/img/screen-1.png" />  
                             </a>
                         </div>
+                            <h5>HOME PAGE</h5>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content" data-aos="fade-left">
-                            <a href="public/img/screen-2.png" class="with-caption image-link" title="Assessment">
+                            <a href="public/img/screen-2.png" class="with-caption image-link" title="Assessment Page">
                                 <img src="public/img/screen-2.png" width="172" height="100%" />  
                             </a>
                         </div>
+                        <h5>ASSESSMENT PAGE</h5>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content" data-aos="fade-right">
-                            <a href="public/img/screen-3.png" class="with-caption image-link" title="Athletes">
+                            <a href="public/img/screen-3.png" class="with-caption image-link" title="Athlete Page">
                                 <img src="public/img/screen-3.png" width="172" height="100%" />  
                             </a>
                         </div>
+                        <h5>ATHLETE PAGE</h5>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="col-content" data-aos="fade-left">
-                            <a href="public/img/screen-4.png" class="with-caption image-link" title="Agents">
+                            <a href="public/img/screen-4.png" class="with-caption image-link" title="Agents Page">
                                 <img src="public/img/screen-4.png" width="172" height="100%" />  
                             </a>
+                        </div>
+                        <h5>AGENTS PAGE</h5>
+                    </div>
+                   
+                </div>
+                <div class="content text-center">
+                    <div class="row"> 
+                        <div class="offset-lg-3 col-lg-6 offset-md-3 col-md-6">
+                            <div class="col-content" data-aos="fade-left">
+                                <a href="public/img/screen-5.png" class="with-caption image-link" title="Payment Page">
+                                    <img src="public/img/screen-4.png" width="172" height="100%" />  
+                                </a>
+                            </div>
+                                <h5>PAYMENT PAGE</h5>
                         </div>
                     </div>
                 </div>
